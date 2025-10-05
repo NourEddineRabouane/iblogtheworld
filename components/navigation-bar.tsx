@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ModeToggle } from "./theme-toggle-btn";
 import { CommandIcon, XIcon } from "lucide-react";
 import { useState } from "react";
+import Logo from "./logo";
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function NavigationBar() {
   return (
     <>
       <nav className="flex justify-between items-center px-4 py-2 bg-background border-b border-border">
-        <h1 className="text-xl font-semibold text-foreground">Logo</h1>
+        <Logo />
 
         <div className="flex items-center gap-2">
           <span className="md:hidden">
